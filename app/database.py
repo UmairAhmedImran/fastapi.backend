@@ -20,14 +20,4 @@ def get_db():
     finally:
         db.close()
 
-#creating a connection to database, use this when you want to use raw SQL and not sqlalchemy
-# while True:
-#     try:
-#         conn = psycopg2.connect(host= 'localhost', database='fastapi', user = 'postgres', password = '857LOVE$$#u', cursor_factory=RealDictCursor)
-#         cursor = conn.cursor()
-#         print("Database connection was sucessfull")
-#         break
-#     except Exception as error:
-#         print("connecting to database failed")
-#         print("Error", error)
-#         time.sleep(2)
+
